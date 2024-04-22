@@ -56,7 +56,7 @@ def index():
 
         else:
             # Check if input is a valid address using Google Maps API
-            g = geocoder.google(input_data, key='AIzaSyDYF47ijjziFiMhifQne5gXWe_7TqZKNm4')
+            g = geocoder.google(input_data, key='API-key-her')
             if g.ok:
                 # Handle successful address input
                 latitude, longitude = g.latlng
@@ -72,7 +72,7 @@ def index():
         <html>
         <head>
             <title>Coordinate Input</title>
-            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYF47ijjziFiMhifQne5gXWe_7TqZKNm4"></script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=API-key-her"></script>
             <style>
                 html, body {
                     height: 100%;
